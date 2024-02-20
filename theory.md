@@ -26,3 +26,26 @@ A: React, the javascripts library for building user interface , is named "React"
 "Reactive" generally refers to a programming paradigm that focuses on asynchronous data streams and the propagation of changes. In the context of web development, reactive programming often involves reacting to changes in data or user input and automatically updating the user interface accordingly. 
 
 ## Q: What is `crossorigin in script tag`?
+A: The `crossorigin` attribute in a `<script>` tag is used to specify how the browser should handle requests made to fetch the script file from a different origin (i.e., a different domain, protocol, or port). 
+
+When you include a script file from a different origin using a `<script>` tag, the browser typically enforces a "same-origin policy" for security reasons. This policy restricts scripts from accessing resources (like data or cookies) from a different origin. However, you can relax this restriction by specifying the `crossorigin` attribute.
+
+The `crossorigin` attribute can have one of the following values:
+
+1. anonymous: This value indicates that the script is fetched without sending any credentials (such as cookies or HTTP authentication) along with the request. This is useful for loading resources that are intended to be publicly accessible.
+
+2. use-credentials: This value indicates that the script should be fetched with credentials (such as cookies or HTTP authentication) included in the request. This is useful when you need to access protected resources on a different origin.
+
+Here's how you can use the `crossorigin` attribute in a `<script>` tag:
+
+```html
+<script src="https://example.com/script.js" crossorigin="anonymous"></script>
+```
+
+or
+
+```html
+<script src="https://example.com/script.js" crossorigin="use-credentials"></script>
+```
+
+It's important to note that the server hosting the script file must also be configured to allow cross-origin requests by including the appropriate CORS (Cross-Origin Resource Sharing) headers in the response. Otherwise, the browser may block the request.
