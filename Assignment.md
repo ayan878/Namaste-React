@@ -10,6 +10,7 @@
 - What is `crossorigin in script tag`?
 - What is difference between `React and ReactDOM`?
 - What is difference between `react.development.js` and `react.production.js` files via CDN?
+- What is difference between library and frameworks ?
 
 ## Coding :
 

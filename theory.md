@@ -49,3 +49,7 @@ or
 ```
 
 It's important to note that the server hosting the script file must also be configured to allow cross-origin requests by including the appropriate CORS (Cross-Origin Resource Sharing) headers in the response. Otherwise, the browser may block the request.
+
+# Q: What is difference between library and frameworks ?
+A: React is library it works in small portion of the app.it is not full-fledge frameworks.
+
