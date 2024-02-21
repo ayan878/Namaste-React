@@ -10,3 +10,5 @@
 - What is integrity in parcel?
 - How to create a production-build?
 - What is dist folder?
+- How to configure the BrowerList ?
+

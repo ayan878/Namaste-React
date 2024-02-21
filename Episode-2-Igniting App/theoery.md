@@ -81,3 +81,6 @@ Ans: cmd- "npx parcel build index.html" if we get this error "Try changing the f
 # Q: What is disk folder?
 
 Ans: When we excute parcel "npx parcel index.html" it generates the development build of your project and hosted on to the folder and the code coming from the disk folder which is displays over browser. when we update something and refresh page.parcel-cache and disk is update using HMR (Hot Module Repalcement)
+
+# Q: How to configure the BrowerList?
+Ans: we will configure it inside pacakge.json
