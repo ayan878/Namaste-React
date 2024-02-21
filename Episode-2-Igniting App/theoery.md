@@ -71,4 +71,13 @@ Transitive dependencies are dependencies that are required by another dependency
 ## Another way to get into our app is node module .it is hosted over npm also.
 
 ## Q: Why CDN link is not prefer to bring react and React and ReactDOM.
-Ans: Fetching a data from CDN link is takes coslty operation. while form node module is easy to get data because it  have react inside the directory
+
+Ans: Fetching a data from CDN link is takes coslty operation. while form node module is easy to get data because it have react inside the directory
+
+# Q: How to create a production-build?
+
+Ans: cmd- "npx parcel build index.html" if we get this error "Try changing the file extension of "main" in package.json." parcel conflict with this becouse "main" is entry point. so remove this "main" from package.json because npm will automatically generate the "main"
+
+# Q: What is disk folder?
+
+Ans: When we excute parcel "npx parcel index.html" it generates the development build of your project and hosted on to the folder and the code coming from the disk folder which is displays over browser. when we update something and refresh page.parcel-cache and disk is update using HMR (Hot Module Repalcement)
