@@ -53,3 +53,5 @@ It's important to note that the server hosting the script file must also be conf
 # Q: What is difference between library and frameworks ?
 A: React is library it works in small portion of the app.it is not full-fledge frameworks.
 
+Frameworks: A comprehensive set of tools, libraries, and conventions that provide a structure for developing an entire application.
+
