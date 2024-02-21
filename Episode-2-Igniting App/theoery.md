@@ -18,6 +18,12 @@ A: NPM, short for Node Package Manager, is a package manager for JavaScript prog
 
 A: It is a configuration for NPM.it keeps tracking the packages version.
 
+## Q: What is package-lock json?
+
+Ans: it keeps track that what is the exact version.and it kind of lock the verison and record of exact version.package.json can have a ^Caret and ~tilde. it is maitaining the each dependency. so that what is there on my local. is the same on the production.
+
+## Note: if we have package.json and package.lock then we can re-generate the Node modules.
+
 ## Q: What is Parcel?
 
 A: it is a bundler it is of two types developamnet and production.
@@ -49,17 +55,13 @@ A: when a package have minor or major upgrade ^Caret is automatically upgrade th
 - Tilde (~) is more restrictive than caret (^) as it allows only minor updates within the same major release, while caret (^) allows minor and patch updates within the same major release.
 - Caret (^) is often preferred for dependencies in projects where you want to stay up-to-date with the latest features and bug fixes without risking compatibility issues due to major version updates.
 
-## Q: What is package-lock json?
-
-Ans: it keeps track that what is the exact version.and it kind of lock the verison and record of exact version.package.json can have a ^Caret and ~tilde.
-
 ## Q: What is integrity in parcel?
 
 Ans:In Parcel, the integrity attribute is used for Subresource Integrity (SRI) checking. Subresource Integrity is a security feature that allows browsers to verify that resources (such as scripts or stylesheets) fetched from a server have not been tampered with.
 
 ## Q: What is node-modules?
 
-Ans: The node_modules directory is a special directory in Node.js projects that contains all the dependencies installed for the project. When you use a package manager like npm (Node Package Manager) to install packages for your Node.js project, npm creates a node_modules directory and installs the packages into it.
+Ans: The node_modules directory is a special directory in Node.js projects that contains all the dependencies installed for the project. When you use a package manager like npm (Node Package Manager) to install packages for your Node.js project, npm creates a node_modules directory and installs the packages into it. we should not host the node modules because if a project has package-lock or package.json .we can be re-generate the node module.
 
 ## Q: What is transitive dependencies?
 
