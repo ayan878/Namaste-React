@@ -67,3 +67,8 @@ Ans: The node_modules directory is a special directory in Node.js projects that 
 
 Ans: A dependency which have their own dependencies.
 Transitive dependencies are dependencies that are required by another dependency of your project. In other words, when you install a package that your project depends on, that package may in turn depend on other packages.
+
+## Another way to get into our app is node module .it is hosted over npm also.
+
+## Q: Why CDN link is not prefer to bring react and React and ReactDOM.
+Ans: Fetching a data from CDN link is takes coslty operation. while form node module is easy to get data because it  have react inside the directory
