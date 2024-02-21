@@ -9,4 +9,4 @@
 - What is package_lock json?
 - What is integrity in parcel?
 - How to create a production-build?
-- What is disk folder?
+- What is dist folder?
