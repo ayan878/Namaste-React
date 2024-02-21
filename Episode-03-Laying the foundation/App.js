@@ -1,22 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement(
-    "div",
-    { id: "child1" },
-    React.createElement("h1", {}, "I'm h1 tag of child 1"),
-    React.createElement("h2", {}, "I'm h2 tag of child 1")
-  ),
-  React.createElement(
-    "div",
-    { id: "child2" },
-    React.createElement("h1", {}, "I'm h1 tag child 2"),
-    React.createElement("h2", {}, "I'm h2 tag of child 2")
-  ),
-]);
+const heading = React.createElement("h1", { id: "heading" }, "Namaste React🚀");
 
-console.log(parent);
+// JSX - it is not HTML in JS.
+// JSX is transpilled before it reaches the JS ENGINE.Transpilling is done by PARCEL. PARCEL gives the transpilation to BABEL(it install by PARCEl) is JS compiler.
+
+// How JSX works
+// JSX=>React.createElement=>React-Element-JS Object =>HTMLElement(render)
+const jsxHeading = <h1 id="heading">Namaste React using JSX 🚀</h1>;
+
+console.log(jsxHeading);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+
+root.render(jsxHeading);
