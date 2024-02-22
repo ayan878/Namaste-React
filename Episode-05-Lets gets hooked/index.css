@@ -20,6 +20,21 @@
 .search{
 padding: 10px;
 }
+.filter-btn {
+  margin-top: 4px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue color, you can change it to fit your design */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}
 .res-container{
   display: flex;
   flex-wrap: wrap;
