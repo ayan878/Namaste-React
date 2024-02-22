@@ -8,9 +8,22 @@ const heading = React.createElement("h1", { id: "heading" }, "Namaste React🚀"
 
 // How JSX works
 // JSX=>React.createElement=>React-Element-JS Object =>HTMLElement(render)
-const jsxHeading = <h1 id="heading">Namaste React using JSX 🚀</h1>;
+// This is React  element
+const jsxHeading = (
+  <h1 id="heading" className="head">
+    Namaste React using JSX 🚀
+  </h1>
+);
 
 console.log(jsxHeading);
+
+// React Components
+// Class based Components -OLD
+// Functional Components -NEW -React Functional Components is function which return some JSX pieces of the code
+// This is React function components
+const HeadingComponents = () => {
+  <h1>Namaste React Functional Components</h1>;
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
