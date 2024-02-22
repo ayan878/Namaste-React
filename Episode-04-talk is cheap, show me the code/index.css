@@ -22,7 +22,7 @@
 }
 .res-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap                                                                                     ;
 }
 .res-card {
   padding: 10px;
