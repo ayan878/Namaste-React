@@ -18,6 +18,7 @@ export const Body = () => {
         const data = await res.json();
         const swiggiApi =
           data?.data?.cards[4].card.card.gridElements.infoWithStyle.restaurants;
+        console.log(swiggiApi);
         setFilteredResList(swiggiApi);
       } catch (error) {
         console.error("Error fetching data:", error.message);
@@ -38,8 +39,8 @@ export const Body = () => {
               className="filter-btn"
               onClick={() => {
                 // Filter the resList based on the condition
-                const filteredList = resList.filter(
-                  (res) => res.data.avgRating > 4
+                const filteredList = filteredResList.filter(
+                  (res) => res.info.avgRating > 4
                 );
                 setFilteredResList(filteredList);
               }}
