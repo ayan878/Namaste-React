@@ -8,7 +8,7 @@
   width: 100px;
 }
 .nav-items > ul {
-    font-size: 24px;
+  font-size: 24px;
   display: flex;
   padding: 0px 20px;
   list-style: none;
@@ -17,8 +17,8 @@
   padding: 10px;
   margin: 4px;
 }
-.search{
-padding: 10px;
+.search {
+  padding: 10px;
 }
 .filter-btn {
   margin-top: 4px;
@@ -35,23 +35,36 @@ padding: 10px;
 .filter-btn:hover {
   background-color: #0056b3; /* Darker shade of blue on hover */
 }
-.res-container{
+.res-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
-.res-card{
-  padding: 10px;
-cursor: pointer;
-width: 200px;
-height: 300px;
-}
-.res-card:hover{
+.res-card {
+  margin: 10px;
   cursor: pointer;
-border: 1px solid black;
-
+  width: 200px;
+  height: 400px;
 }
-.res-logo{
+.res-card:hover {
+  cursor: pointer;
+  border: 1px solid black;
+}
+.res-logo {
   width: 100%;
   height: 140px;
-  
+}
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.shimmer-card {
+  width: 200px;
+  height: 400px;
+  background-color: #d0c8c8;
+  margin: 4px;
+  /* border-radius: 11px; */
 }
