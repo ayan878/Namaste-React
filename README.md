@@ -21,3 +21,6 @@
 - Tree Shaking Algorithm - Remove unused code 
 
 # this will aslo help in System Design interviews.
+# 2 types of Routing in web apps
+- Client Side Routing - we are implementing only Client Side routing on React
+- Server Side Routing
